@@ -4,6 +4,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 
+
 const Container = styled.div`
   height:60px;
   background-color:gray;
@@ -23,7 +24,7 @@ const MenuItem=styled.span`
   font-size: 14px;
   cursor: pointer;
   margin-left: 25px;
- 
+
 `
 
 const Center=styled.h1`
@@ -41,7 +42,8 @@ const Right=styled.div`
 
 `
 const SearchContainer=styled.div`
-  /* border: 1px solid black; */
+  border:0.1 solid darkgray;
+  background-color: white;
   cursor:pointer;
   display: flex;
   align-items: center;
@@ -52,7 +54,10 @@ const SearchContainer=styled.div`
 `
 const Input=styled.input`
   border: none;
+  /* display: flex; */
+
 `
+
 const Navbar = () => {
   return (
     <Container>
@@ -69,16 +74,18 @@ const Navbar = () => {
           <Input/>
           <Search style={{color:"black", fontSize:30}}/>        
           </SearchContainer>
-          
-
           <AccountCircle/>
           <MenuItem>
             <Badge badgeContent={1} color="primary"/>
+
             <Favorite/>
+
           </MenuItem>
           <MenuItem>
             <Badge badgeContent={4} color="primary"/>
+            
             <ShoppingCart/>
+
           </MenuItem>
           {/* <ShoppingCart/> */}
         </Right>

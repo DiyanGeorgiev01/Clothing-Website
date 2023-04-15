@@ -1,7 +1,7 @@
 import { 
     ShoppingCartOutlined,
     SearchOutlined,
-    ShoppingCartOutlined,
+    FavoriteBorderOutlined,
  } from "@material-ui/icons"
 import styled from "styled-components"
 

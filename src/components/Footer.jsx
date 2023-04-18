@@ -1,20 +1,23 @@
 import { Facebook, Instagram, MailOutline, Phone, Room, Twitter } from '@material-ui/icons'
 import React from 'react'
 import styled from "styled-components"
+import{mobile} from"../responsive"
 
 const Container = styled.div`
     display: flex;
-
+    ${mobile({flexDirection :"column"})}
 `
 const Left = styled.div`
     flex:1;
     display: flex;
     flex-direction: column;
     padding: 20px;  
+    ${mobile({padding:"5px",marginBottom:"20px"})}
 `
 const Center = styled.div`
     flex: 1;
-    padding: 20px
+    padding: 20px;
+    ${mobile({display:"none"})}
 `
 
 const Title = styled.h3`
@@ -36,6 +39,7 @@ const ListItem = styled.li`
 
 const Right = styled.div`
     flex:1;
+    ${mobile({padding:"5px",backgroundColor:"#eee"})}
 `
 const Logo = styled.h1``
 
@@ -75,7 +79,7 @@ const Footer = () => {
     <Container>
       <Left>
         <Logo>RESENTMENT</Logo>
-        <Desc>The vision of the brand was created 2022 and its ment to represent prurity that come from the impure.</Desc>
+        <Desc>The vision of the brand was created 2022 and it is ment to represent prurity that has come from the impure.</Desc>
         <SocialContainer>
             <SocialIcon color="3B5999">
                 <Facebook/>

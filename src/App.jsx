@@ -8,6 +8,7 @@ import Product from "./pages/Product";
 import Register from "./pages/Register";
 // eslint-disable-next-line
 import Login from "./pages/Login";
+// eslint-disable-next-line
 import Cart from "./pages/Cart";
 
 const App = () => {
